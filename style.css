@@ -1,60 +1,205 @@
-/*в правилі для body нічого змінювати НЕ потрібно*/
-body{
-	margin:20px auto;
-	padding:0;
-	width: 70%;
-	min-height: 500px;
-	box-shadow: 2px 2px 5px grey;
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 	font-family: Arial;
-	
 }
 
-/*в цьому правилі нічого не потрібно змінювати*/
-.slogan{
-	font-size: 20px;
-	text-align: center;
-}
-
-/*в цьому правилі нічого не потрібно змінювати*/
-.footer{
-	background:#0e2b3c;
-	height: 25px;
-	color:white;
-	text-align: center;
-	font-size: 0.5em;
-}
-
-
-/*тут бажано додати одну властивість,  
-яка змінює режим розрахунку загальних розмірів*/
 .header{
-	width: 100%;
+	width:680px;
+	margin: 0 auto;
+	height: 80px;
+}
+
+.header>img{
+	margin: 30px;
+}
+
+.header>ul{
+	display: inline-block;
+	margin-top: 30px;
+	float: right;
+}
+
+.header>ul>li{
+	display: inline-block;
+	margin-right: 30px;
+	font-family: Arial;
+	font-size: 14pt;
+}
+
+.header>ul>li>a{
+	text-decoration: none;
+	color: black;
+}
+
+.b1{
+	height: 350px;
+	background-image: url("img/billboard.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.b1>div{
+	width: 680px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.b1 p{
+	font-family: Arial;
+	font-size: 34pt;
+}
+
+.b1 p>span{
+	font-weight: bold;
+}
+
+.b1 input{
+	display: inline-block;
+	margin-top: 50px;
+	width: 300px;
+	font-family: Arial;
+	font-size: 24pt;	
+	background-color: rgb(222, 51, 213);
+	border: none;
+	border-radius: 20px;
+	color: white;
+}
+
+.b2, .b3{
+	width: 680px;
+	margin: 0 auto;
+	height: 250px;
+	text-align: center;
+	margin-top:50px;
+}
+
+.b2>div{
+	display: inline-block;
+	height: 250px;
+	width: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family: Arial;
+}
+
+.b2>div>img{
 	height: 50px;
-	background: #a6dbfb;
-	padding: 5px;
-	color:#0e2b3c;
-	
+	margin-bottom: 20px;
 }
 
-/*зображенням потрібно додати по одній властивості*/
-.oreo-logo{
-	height: 40px;
-	
+.b2>div>p{
+	margin-bottom: 20px;
+	line-height: 18pt;
 }
 
-.oreo-cookie{
-	height: 40px;
-	
+.b2>div>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
 
-
-.main{
-	min-height: 425px;
-	background: #deebf4;
-	
+.b3{
+	width: 100%;
+	background-color: rgb(240,240,240);
+	padding-top: 30px;
+	height: 400px;
 }
 
+.b3>div{
+	display: inline-block;
+	height: 320px;
+	width: 300px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
 
+.b3>div>div{
+	border: 2px solid rgb(220,220,220);
+	padding: 30px;
+	margin-bottom: 30px;
+	line-height: 18pt;
+}
 
+.b3>div>p{
+	margin: 10px;
+}
 
+.b3>div p:nth-child(3){
+	font-weight: bold;
+}
 
+.b4{
+	width: 680px;
+	margin: 0 auto;
+	height: 150px;
+	text-align: center;
+	margin-top:50px;
+}
+
+.b4 img{
+	margin: 15px;
+}
+
+.b5{
+	background-color: rgb(240,240,240);
+	height: 500px;
+	text-align: center;
+	margin-top:50px;
+	padding-top: 30px;
+}
+
+.b5>div{
+	margin: 50px;
+}
+
+.b5>div>div {
+	display: inline-block;
+	width: 450px;
+	text-align: left;
+	line-height: 22pt;
+}
+
+.b5>div>img{
+	height: 150px;
+	margin-right: 50px;
+}
+
+.b5>div>div p:first-child{
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.footer{
+	height: 280px;
+	background-color: rgb(60,60,100);
+	text-align: center;
+}
+
+.footer>img{
+	margin: 50px;
+}
+
+.footer>ul{
+	/*display: inline-block;*/
+	margin-top: 50px;
+}
+
+.footer>ul>li{
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 14pt;
+}
+
+.footer>ul>li>a{
+	text-decoration: none;
+	color: white;
+}
+
+.footer>p{
+	color: white;
+	margin-top: 50px;
+}
